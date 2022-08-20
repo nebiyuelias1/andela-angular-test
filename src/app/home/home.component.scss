@@ -1,0 +1,12 @@
+.todos-table {
+  margin-top: 1rem;
+}
+
+.todos-table, td, th {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 1rem;
+}

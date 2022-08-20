@@ -1,0 +1,22 @@
+<h1>Todos</h1>
+
+<input type="text" [(ngModel)]="filter" placeholder="Enter id here to filter" (keyup)="onKeyUp()">
+
+<table class="todos-table">
+  <thead>
+    <tr>
+      <th>User Id</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Completed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todo of todos$ | async">
+      <td>{{todo.userId}}</td>
+      <td>{{todo.id}}</td>
+      <td>{{todo.title}}</td>
+      <td>{{todo.completed}}</td>
+    </tr>
+  </tbody>
+</table>
